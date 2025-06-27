@@ -1,12 +1,20 @@
 package AdvancedOop.Player;
 
 public class Person {
-	double height;
-	double weight;
+	private double height;
+	private double weight;
 	
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
 	public Person() {
-		this.height=10;
-		this.weight=70;
+		this.setHeight(10);
+		this.weight=85;
 	}
 	
 	public void walks() {
