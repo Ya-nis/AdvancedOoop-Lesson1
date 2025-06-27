@@ -3,7 +3,8 @@ package AdvancedOop.Player;
 public class Person {
 	private float height;
 	private float weight;
-	private String name; 
+	private String name;
+	private int IQ;
 	
 	public double getHeight() {
 		return height;
