@@ -1,31 +1,33 @@
 package AdvancedOop.Player;
 
 public class Person {
-	private double height;
-	private double weight;
+	private float height;
+	private float weight;
+	private String name; 
 	
 	public double getHeight() {
 		return height;
 	}
 
-	public void setHeight(double height) {
+	public void setHeight(float height) {
 		this.height = height;
 	}
 
-	public Person() {
+	public Person(String name, float weight) {
+		this.name=name; 
 		this.setHeight(10);
-		this.weight=85;
+		this.weight= weight; 
 	}
 	
 	public void walks() {
 		this.weight*= 0.98;
-		System.out.println("You lost weight!");
-		System.out.printf("You weight: %.2f kg\n\n",this.weight);
+		System.out.println(this.name+" lost weight!");
+		System.out.printf(this.name+" weight: %.2f kg\n\n",this.weight);
 	}
 	
 	public void eats() {
 		this.weight *= 1.05;
-		System.out.println("You gained weight!");
-		System.out.printf("You weight: %.2f kg\n\n",this.weight);
+		System.out.println(this.name+" gained weight!");
+		System.out.printf(this.name+" weight: %.2f kg\n\n",this.weight);
 	}
 }
