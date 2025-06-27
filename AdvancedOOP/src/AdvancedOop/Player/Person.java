@@ -13,9 +13,9 @@ public class Person {
 		this.height = height;
 	}
 
-	public Person(String name, float weight) {
+	public Person(String name, float weight, float height) {
 		this.name=name; 
-		this.setHeight(10);
+		this.height = height; //I replace this line of code this.setHeight(10);
 		this.weight= weight; 
 	}
 	
